@@ -4,7 +4,7 @@ Created 5/13/16.
 Copyright © 2016 TSPrograms.
 */
 
-var prefs = require('./prefs.js');
+var prefs = require('./prefs');
 var url   = require('url');
 
 var newTabURL = prefs.get('browser.newtab.url');
