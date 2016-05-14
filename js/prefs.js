@@ -4,6 +4,8 @@ Created on 5/14/16 by TSPrograms.
 Copyright © 2016 TSPrograms.
 */
 
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
 const electron = require('electron');
