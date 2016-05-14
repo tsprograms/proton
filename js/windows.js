@@ -20,7 +20,7 @@ exports.Window = function(initialURL, options) {
     new tabs.Tab(initialURL)
   ];
 
-  this.focus = function(tabID) {
+  this.focusTab = function(tabID) {
     if (tabID >= 0 && tabID < this.tabs.length) {
       focusedTab = tabID;
       return true;
@@ -32,6 +32,9 @@ exports.Window = function(initialURL, options) {
     this.tabs.push(new Tab());
     this.focus(id);
     return id;
+  };
+  this.getFocusedTab = function() {
+    return this.tabs[focusedTab];
   };
 
   this.browserWindow.loadUrl('file://' + __dirname + '/app/index.html');
