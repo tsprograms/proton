@@ -26,4 +26,6 @@ $(document).ready(() => {
     $('<span class="title"></span>').text(i => appWindow.tabs[i].title),
     $('<img class="favicon" alt="favicon">').attr('src', i => appWindow.tabs[i].favicon)
   ).eq(focusedID).addClass('focused');
+  
+  utils.html('<div id="address-bar"><input id="address-input"><span id="reload"></span></div>');
 });
