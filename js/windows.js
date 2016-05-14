@@ -36,6 +36,9 @@ exports.Window = function(initialURL, options) {
   this.getFocusedTab = function() {
     return this.tabs[focusedTab];
   };
+  this.getFocusedID = function() {
+    return focusedTab;
+  };
 
   this.browserWindow.loadUrl('file://' + __dirname + '/app/index.html');
 };
