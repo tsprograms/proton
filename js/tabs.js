@@ -4,6 +4,8 @@ Created 5/13/16.
 Copyright © 2016 TSPrograms.
 */
 
+'use strict';
+
 var prefs = require('./prefs');
 var url   = require('url');
 
